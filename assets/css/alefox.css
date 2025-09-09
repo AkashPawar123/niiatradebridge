@@ -1152,8 +1152,8 @@ h6 {
   z-index: 2;
   background-color: var(--alefox-white, #fff);
   border-radius: 50%;
-  width: 278px;
-  height: 278px;
+  width: 390px;
+  height: 390px;
   margin: 0 auto;
   overflow: hidden;
   padding: 12px;
@@ -10473,8 +10473,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .page-header {
   background-color: var(--alefox-black2, #202221);
   position: relative;
-  padding-top: 195px;
-  padding-bottom: 200px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
@@ -12620,6 +12620,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-one__item__content {
   position: relative;
   padding: 32px 30px 33px;
+  height: 325px;
 }
 .service-one__item__icon {
   font-size: 60px;
@@ -12696,9 +12697,8 @@ body.megamenu-popup-active .mobile-nav__content {
   color: var(--alefox-base, #1db954);
 }
 .service-one__item__text {
-  font-size: 15px;
-  border-bottom: 1px solid var(--alefox-border-color, #dddddd);
-  padding-bottom: 13px;
+  font-size: 18px;
+  padding-bottom: 0px;
   margin: 0 0 25px;
 }
 .service-one__item__link {
