@@ -3613,8 +3613,8 @@ h6 {
   }
 }
 .main-menu .main-menu__list > li {
-  padding-top: 41px;
-  padding-bottom: 41px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   position: relative;
 }
 .main-menu .main-menu__list > li.dropdown > a {
@@ -11487,14 +11487,14 @@ margin-bottom: 70px;
 }
 @media (max-width: 1199px) {
   .main-slider-three__item {
-    padding-top: 250px;
-    padding-bottom: 180px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 @media (max-width: 767px) {
   .main-slider-three__item {
-    padding-top: 200px;
-    padding-bottom: 140px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .main-slider-three__bg {
@@ -11611,8 +11611,8 @@ margin-bottom: 70px;
 }
 @media (max-width: 767px) {
   .main-slider-three__title {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 .main-slider-three__text {
