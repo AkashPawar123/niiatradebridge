@@ -2695,9 +2695,8 @@ h6 {
 .contact-two {
   position: relative;
   z-index: 1;
-  background-color: var(--alefox-base, #2a8f44);
   overflow: hidden;
-  padding: 120px 0;
+  padding: 30px 0;
 }
 @media (max-width: 767px) {
   .contact-two {
@@ -2738,7 +2737,7 @@ h6 {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: rgba(14, 14, 14, 0.85);
+ 
 }
 @media (max-width: 767px) {
   .contact-two__bg {
@@ -2798,7 +2797,7 @@ h6 {
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  max-width: 370px;
+  max-width: 440px;
 }
 .contact-two__item {
   position: relative;
@@ -2806,7 +2805,7 @@ h6 {
   display: flex;
   align-items: center;
   gap: 28px;
-  padding: 50px 60px;
+  padding: 27px 0px;
 }
 @media (max-width: 991px) {
   .contact-two__item {
@@ -2864,13 +2863,13 @@ h6 {
   transform: scale(0.9);
 }
 .contact-two__item__title {
-  color: var(--alefox-white, #fff);
+  color: #151515;
   margin: 0 0 8px;
   font-size: 22px;
   font-weight: 700;
 }
 .contact-two__item__text {
-  color: var(--alefox-white, #fff);
+  color: #151515;
   margin: 0;
 }
 .contact-two__item__text a {
@@ -8679,7 +8678,7 @@ margin-bottom: 70px;
 .register-page__wrap {
   position: relative;
   max-width: 970px;
-  padding: 60px;
+  padding: 40px;
   background-color: var(--alefox-gray, #f6f4ec);
   margin: 0 auto;
 }
@@ -10531,7 +10530,7 @@ margin-bottom: 70px;
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/backgrounds/page-header-bg-1-1.jpg);
+  background-image: url(../images/new/assortment-frozen-healthy-food.jpg);
   opacity: 0.5;
 }
 .page-header .container {
