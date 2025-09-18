@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/alefox.css" />
+    
 </head>
 
 
@@ -185,115 +186,63 @@
             </div><!-- /.container -->
         </section><!-- /.about-three -->
 
-       <script>
-$(document).ready(function () {
-  if ($(".post-filter").length) {
-    var postFilterList = $(".post-filter li");
+     
 
-    // 👉 Show Frozen Vegetables on load
-    $(".filter-layout").isotope({
-      filter: ".organic",
-      animationOptions: {
-        duration: 500,
-        easing: "linear",
-        queue: false
-      }
-    });
-
-    // 👉 Set Frozen Vegetables tab active
-    $(".post-filter li").removeClass("active");
-    $(".post-filter li[data-filter='.organic']").addClass("active");
-
-    // 👉 On click filter
-    postFilterList.on("click", function () {
-      var Self = $(this);
-      var selector = Self.attr("data-filter");
-      postFilterList.removeClass("active");
-      Self.addClass("active");
-
-      $(".filter-layout").isotope({
-        filter: selector,
-        animationOptions: {
-          duration: 500,
-          easing: "linear",
-          queue: false
-        }
-      });
-      return false;
-    });
-  }
-});
-</script>
-<style>.filter-layout {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.filter-item {
-  width: 33.333%; /* 3 per row */
-  padding: 15px;
-}
-
-@media (max-width: 992px) {
-  .filter-item { width: 50%; } /* 2 per row on tablet */
-}
-
-@media (max-width: 576px) {
-  .filter-item { width: 100%; } /* 1 per row on mobile */
-}
-</style>
        <section class="gallery-one" style="padding: 10px 0;">
   <div class="container">
-    <div class="text-center">
-      <ul class="list-unstyled post-filter gallery-one__filter__list">
-        <li data-filter=".organic" class="active"><span>Frozen Vegetables</span></li>
-        <li data-filter=".agriculture"><span>Ready-to-Eat Snacks</span></li>
-      </ul>
+   <!-- Filter Buttons -->
+<div class="text-center mb-4">
+  <ul class="list-unstyled post-filter gallery-one__filter__list d-inline-flex gap-3">
+    <li data-filter=".organic" class="active"><span>Frozen Vegetables</span></li>
+    <li data-filter=".agriculture"><span>Ready-to-Eat Snacks</span></li>
+  </ul>
+</div>
+
+<!-- Products -->
+<div class="row filter-layout justify-content-center">
+  <!-- Snacks -->
+  <div class="col-md-4 col-lg-4 filter-item agriculture d-none">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/samosas (1).jpg" alt="NIIA Trade Bridge">
+      </div>
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="samosa.html">Frozen / Ready to Eat Snacks</a>
+        </div>
+        <h4 class="product__item__title"><a href="samosa.html">Samosa</a></h4>
+      </div>
     </div>
+  </div>
 
-    <div class="row filter-layout">
-      <!-- Snacks -->
-      <div class="col-md-4 col-lg-4 filter-item agriculture">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/samosas (1).jpg" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="samosa.html">Frozen / Ready to Eat Snacks</a>
-            </div>
-            <h4 class="product__item__title"><a href="samosa.html">Samosa</a></h4>
-          </div>
-        </div>
+  <div class="col-md-4 col-lg-4 filter-item agriculture d-none">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/front-view-tasty-gutabs-thin-hotcakes-with-meat-inside-desk-dark-surface.jpg" alt="NIIA Trade Bridge">
       </div>
-
-      <div class="col-md-4 col-lg-4 filter-item agriculture">
-        <div class="product__item__img">
-          <img src="assets/images/new/front-view-tasty-gutabs-thin-hotcakes-with-meat-inside-desk-dark-surface.jpg" alt="NIIA Trade Bridge">
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="parathas.html">Frozen / Ready to Eat Snacks</a>
         </div>
-        <div class="product__item__content">
-          <div class="product__item__cats">
-            <a href="parathas.html">Frozen / Ready to Eat Snacks</a>
-          </div>
-          <h4 class="product__item__title"><a href="parathas.html">Parathas</a></h4>
-        </div>
+        <h4 class="product__item__title"><a href="parathas.html">Parathas</a></h4>
       </div>
+    </div>
+  </div>
 
-      <div class="col-md-4 col-lg-4 filter-item agriculture">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/burger.jpg" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="veg-burger.html">Frozen / Ready to Eat Snacks</a>
-            </div>
-            <h4 class="product__item__title"><a href="veg-burger.html">Veg Burger</a></h4>
-          </div>
-        </div>
+  <div class="col-md-4 col-lg-4 filter-item agriculture d-none">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/burger.jpg" alt="NIIA Trade Bridge">
       </div>
-
-      <div class="col-md-4 col-lg-4 filter-item agriculture">
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="veg-burger.html">Frozen / Ready to Eat Snacks</a>
+        </div>
+        <h4 class="product__item__title"><a href="veg-burger.html">Veg Burger</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4 filter-item agriculture d-none" >
         <div class="product__item__img">
           <img src="assets/images/new/fried-spring-rolls-cutting-board.jpg" alt="NIIA Trade Bridge">
         </div>
@@ -305,77 +254,81 @@ $(document).ready(function () {
         </div>
       </div>
 
-      <!-- Vegetables -->
-      <div class="col-md-4 col-lg-4 col-xl-4 filter-item organic">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/okra.png" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="products.html">Frozen Vegetables</a>
-            </div>
-            <h4 class="product__item__title"><a href="product-details.html">Okra</a></h4>
-          </div>
-        </div>
+  <!-- Vegetables -->
+  <div class="col-md-4 col-lg-4 filter-item organic">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/okra.png" alt="NIIA Trade Bridge">
       </div>
-
-      <div class="col-md-4 col-lg-4 col-xl-4 filter-item organic">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/okra.jpg" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="products.html">Frozen Vegetables</a>
-            </div>
-            <h4 class="product__item__title"><a href="product-details.html">French beans</a></h4>
-          </div>
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="okra.html">Frozen Vegetables</a>
         </div>
-      </div>
-
-      <div class="col-md-4 col-lg-4 col-xl-4 filter-item organic">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/drumstickvegetables.jpg" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="products.html">Frozen Vegetables</a>
-            </div>
-            <h4 class="product__item__title"><a href="product-details.html">Drum sticks</a></h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-lg-4 col-xl-4 filter-item organic">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/front-view-vegetable-min (1).jpg" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="products.html">Frozen Vegetables</a>
-            </div>
-            <h4 class="product__item__title"><a href="product-details.html">French beans</a></h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-lg-4 col-xl-4 filter-item organic">
-        <div class="product__item">
-          <div class="product__item__img">
-            <img src="assets/images/new/wooden-plate-sliced-chili-peppers-stone-table.jpg" alt="NIIA Trade Bridge">
-          </div>
-          <div class="product__item__content">
-            <div class="product__item__cats">
-              <a href="products.html">Frozen Vegetables</a>
-            </div>
-            <h4 class="product__item__title"><a href="product-details.html">Chili Peppers</a></h4>
-          </div>
-        </div>
+        <h4 class="product__item__title"><a href="okra.html">Okra</a></h4>
       </div>
     </div>
+  </div>
+
+  <div class="col-md-4 col-lg-4 filter-item organic">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/okra.jpg" alt="NIIA Trade Bridge">
+      </div>
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="french-beans.html">Frozen Vegetables</a>
+        </div>
+        <h4 class="product__item__title"><a href="french-beans.html">French beans</a></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-lg-4 filter-item organic">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/drumstickvegetables.jpg" alt="NIIA Trade Bridge">
+      </div>
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="drum-sticks.html">Frozen Vegetables</a>
+        </div>
+        <h4 class="product__item__title"><a href="drum-sticks.html">Drum sticks</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4 filter-item organic">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/front-view-vegetable-min (1).jpg" alt="NIIA Trade Bridge">
+      </div>
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="mix-vegetables.html">Frozen Vegetables</a>
+        </div>
+        <h4 class="product__item__title"><a href="mix-vegetables.html">Mix Vegetable</a></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-lg-4 filter-item organic">
+    <div class="product__item">
+      <div class="product__item__img">
+        <img src="assets/images/new/wooden-plate-sliced-chili-peppers-stone-table.jpg" alt="NIIA Trade Bridge">
+      </div>
+      <div class="product__item__content">
+        <div class="product__item__cats">
+          <a href="chili-peppers.html">Frozen Vegetables</a>
+        </div>
+        <h4 class="product__item__title"><a href="chili-peppers.html">Chili Peppers</a></h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
   </div>
 </section>
 
@@ -500,7 +453,6 @@ $(document).ready(function () {
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
             <div class="logo-box">
                 <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" width="155"
                         alt="" /></a>
@@ -607,7 +559,66 @@ $(document).ready(function () {
         </svg>
     </a>
     <!-- back-to-top-end -->
+     <!-- JS for Filtering -->
+<script>
+  document.querySelectorAll(".gallery-one__filter__list li").forEach(filterBtn => {
+    filterBtn.addEventListener("click", () => {
+      // remove active class
+      document.querySelectorAll(".gallery-one__filter__list li").forEach(el => el.classList.remove("active"));
+      filterBtn.classList.add("active");
 
+      const filterValue = filterBtn.getAttribute("data-filter");
+
+      // show/hide products
+      document.querySelectorAll(".filter-item").forEach(item => {
+        if (item.classList.contains(filterValue.replace(".", ""))) {
+          item.classList.remove("d-none");
+        } else {
+          item.classList.add("d-none");
+        }
+      });
+    });
+  });
+</script>
+  <script>
+$(document).ready(function () {
+  if ($(".post-filter").length) {
+    var postFilterList = $(".post-filter li");
+
+    // 👉 Show Frozen Vegetables on load
+    $(".filter-layout").isotope({
+      filter: ".organic",
+      animationOptions: {
+        duration: 500,
+        easing: "linear",
+        queue: false
+      }
+    });
+
+    // 👉 Set Frozen Vegetables tab active
+    $(".post-filter li").removeClass("active");
+    $(".post-filter li[data-filter='.organic']").addClass("active");
+
+    // 👉 On click filter
+    postFilterList.on("click", function () {
+      var Self = $(this);
+      var selector = Self.attr("data-filter");
+      postFilterList.removeClass("active");
+      Self.addClass("active");
+
+      $(".filter-layout").isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 500,
+          easing: "linear",
+          queue: false
+        }
+      });
+      return false;
+    });
+  }
+});
+</script>
 
     <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
