@@ -1328,7 +1328,11 @@ h6 {
   position: relative;
 }
 .team-details__image img {
-  max-width: 100%;
+    max-width: 100%;
+    height: 470px;
+    object-fit: cover;
+    width: 470px;
+    border-radius: 20px;
 }
 .team-details__content {
   position: relative;
@@ -7054,7 +7058,7 @@ margin-bottom: 70px;
 
 .product-one {
   position: relative;
-  padding: 120px 0;
+  padding: 0px 0px 70px;
 }
 @media (max-width: 767px) {
   .product-one {
